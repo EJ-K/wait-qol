@@ -75,6 +75,7 @@ All dependencies are externals managed by the BigWigsMods packager. For local de
 
 - **Committer:** `EJ-K <elliot@clerwood.dev>`
 - **Default branch:** `main`
+- **Commit style:** Concise conventional commit messages (e.g. `feat: add innervate tracker`). Do not include `Co-Authored-By` or any AI attribution in commits.
 
 ## Adding New Modules
 

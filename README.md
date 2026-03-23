@@ -4,8 +4,10 @@ Quality of Life tools for World of Warcraft raiders.
 
 ## Features
 
-- **Combat Timer**: Display a stopwatch showing how long you've been in combat
-- **Range Warning**: Display a warning with range information when your target is out of range during combat
+- **Combat Timer** — Stopwatch showing how long you've been in combat
+- **Range Display** — Warning with range information when your target is out of range during combat
+- **Innervate Tracker** — Detects Innervate on you by polling spell mana costs, with configurable icon, cooldown swipe, glow, and sound alerts
+- **Profiles** — Per-character, global, and spec-specific profile support with import/export
 
 ## Installation
 
@@ -15,19 +17,7 @@ Quality of Life tools for World of Warcraft raiders.
 
 ## Usage
 
-Type `/wqol` to open the configuration panel.
-
-## Profiles
-
-WaitQOL supports profiles with the following features:
-
-- Create, copy, delete, and reset profiles
-- Global profile option (same profile across all characters)
-- Spec-specific profiles (automatically switch profiles when changing specs)
-
-## Development
-
-See [CLAUDE.md](CLAUDE.md) for development notes and architecture documentation.
+Type `/wqol` or click the minimap button to open the configuration panel.
 
 ## License
 
