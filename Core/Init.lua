@@ -92,14 +92,23 @@ function WaitQOL:OnInitialize()
             OnClick = function(_, button)
                 if button == "LeftButton" then
                     WaitQOL:OpenConfig()
+                elseif button == "RightButton" then
+                    WaitQOL:ToggleMinimapBar()
                 end
             end,
             OnTooltipShow = function(tooltip)
                 tooltip:AddLine("WaitQOL")
-                tooltip:AddLine("Click to open settings", 0.8, 0.8, 0.8)
+                tooltip:AddLine("Left-click to open settings", 0.8, 0.8, 0.8)
+                tooltip:AddLine("Right-click to toggle minimap bar", 0.8, 0.8, 0.8)
             end,
         })
         dbIcon:Register("WaitQOL", dataObject, self.db.global.minimapIcon)
+
+        -- Shrink the icon texture to fit within the circular minimap button
+        local btn = dbIcon:GetMinimapButton("WaitQOL")
+        if btn and btn.icon then
+            btn.icon:SetSize(14, 14)
+        end
     end
 
     self:Print("WaitQOL loaded. Use /wqol to open settings.")
@@ -176,6 +185,13 @@ function WaitQOL:OpenConfig()
         elseif ns.GUI.CreateGUI then
             ns.GUI:CreateGUI()
         end
+    end
+end
+
+function WaitQOL:ToggleMinimapBar()
+    local module = self.modules["MinimapBar"]
+    if module and module.ToggleBar then
+        module:ToggleBar()
     end
 end
 

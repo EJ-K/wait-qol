@@ -5,6 +5,7 @@
 ## Version: @project-version@
 ## IconTexture: Interface\AddOns\WaitQOL\WaitAddons
 ## SavedVariables: WaitQOLDB
+## X-Wago-ID: 4N2kqZ6L
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDualSpec-1.0, LibCustomGlow-1.0, LibDataBroker-1.1, LibDBIcon-1.0
 
 # Embedded Libraries
@@ -31,6 +32,7 @@ Core\Modules.lua
 Modules\CombatTimer.lua
 Modules\RangeDisplay.lua
 Modules\InnervateTracker.lua
+Modules\MinimapBar.lua
 Modules\Profiles.lua
 
 # Config
