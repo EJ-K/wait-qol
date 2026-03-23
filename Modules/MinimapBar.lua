@@ -24,7 +24,6 @@ function MinimapBarModule:GetDefaults()
         iconSpacing = 2,
         bgColor = { r = 0, g = 0, b = 0, a = 0.6 },
         padding = 4,
-        collapsed = false,
         anchorPoint = "TOPRIGHT",
         anchorFrame = "MinimapCluster",
         anchorRelativePoint = "BOTTOMRIGHT",
@@ -577,7 +576,6 @@ function MinimapBarModule:ToggleBar()
     end
 
     self.collapsed = not self.collapsed
-    self.savedVars.collapsed = self.collapsed
 
     if self.collapsed then
         if self.barFrame then
@@ -598,7 +596,7 @@ end
 
 function MinimapBarModule:OnInitialize(savedVars)
     self.savedVars = savedVars
-    self.collapsed = savedVars.collapsed or false
+    self.collapsed = true
 
     -- Ensure tables exist (migration from older saved vars)
     if not savedVars.buttonOrder then savedVars.buttonOrder = {} end
