@@ -1,0 +1,37 @@
+## Interface: 120001
+## Title: WaitQOL
+## Notes: Quality of Life tools for raiders
+## Author: Wait
+## Version: @project-version@
+## IconTexture: Interface\AddOns\WaitQOL\WaitAddons
+## SavedVariables: WaitQOLDB
+## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDualSpec-1.0, LibCustomGlow-1.0, LibDataBroker-1.1, LibDBIcon-1.0
+
+# Embedded Libraries
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua
+Libs\AceGUI-3.0-SharedMediaWidgets\widget.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\LibDualSpec-1.0\LibDualSpec-1.0.lua
+Libs\LibCustomGlow-1.0\LibCustomGlow-1.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+
+# Core
+Core\Init.lua
+Core\Modules.lua
+
+# Modules
+Modules\CombatTimer.lua
+Modules\RangeDisplay.lua
+Modules\InnervateTracker.lua
+Modules\Profiles.lua
+
+# Config
+Config\GUI.lua
